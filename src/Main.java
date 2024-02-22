@@ -1,43 +1,27 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Este é o Screen Match!");
-        System.out.println("Filme: Top Gun Maverick");
+        System.out.println("Esse é o Screen Match");
+        System.out.println("Filme: Top Gun: Maverick");
 
         int anoDeLancamento = 2022;
-        System.out.println("O filme foi lançado em: " + anoDeLancamento);
-        boolean planoAssinatura = true;
+        System.out.println("Ano de lançamento: " + anoDeLancamento);
+        boolean incluidoNoPlano = true;
         double notaDoFilme = 8.1;
-        System.out.println("O filme esta no seu plano: " + planoAssinatura);
-        System.out.println("A nota do Filme é: " + notaDoFilme);
 
-        String sinopse;
-        sinopse = """
-                Top Gun Maverick
-                Exelente filme pela midia
-                Ano de lancamento
-                """ +  anoDeLancamento;
-
-        double media = (9.8 + 6.3 + 8.0) / 3;
+        //Média calculada pelas 3 notas da Jack, Paulo e Suelem
+        double media = (9.8 + 6.3 + 8.0) /3;
 
         System.out.println(media);
+        String sinopse;
+        sinopse = """
+                Filme Top Gun
+                Filme de aventura com galã dos anos 80
+                Muito bom!
+                Ano de lançamento
+                """ + anoDeLancamento;
         System.out.println(sinopse);
 
-
-
-        String senha = "12345";
-        if (senha.equals("12345")){
-            System.out.println("Acesso autorizado!");
-        }else{
-            System.out.println("Acesso negado!");
-        }
-
-        String nome = "Igor";
-        int idade = 19;
-        double valor = 250.98;
-
-        System.out.println(String.format("Meu nome é %s, tenho %d e atualmente tenho na minha conta do C6 bank %f!", nome, idade, valor));
-
+        int classificacao = (int) (media /2);
+        System.out.println(classificacao);
     }
 }
-
-
